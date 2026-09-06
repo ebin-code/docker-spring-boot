@@ -14,7 +14,7 @@ spec:
     spec:
       containers:
       - name: my-springboot-app
-        image: 717090908635.dkr.ecr.ap-south-1.amazonaws.com/trivy:11
+        image: 717090908635.dkr.ecr.ap-south-1.amazonaws.com/trivy
         imagePullPolicy: Always
         ports:
         - containerPort: 8080
