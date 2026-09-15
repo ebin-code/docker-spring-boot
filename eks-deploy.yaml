@@ -14,7 +14,9 @@ spec:
     spec:
       containers:
       - name: my-springboot-app
-        image: 717090908635.dkr.ecr.ap-south-1.amazonaws.com/k8s:${IMAGE_TAG}
+       # image: 717090908635.dkr.ecr.ap-south-1.amazonaws.com/k8s:${IMAGE_TAG} - ECR uncomment it and comment below
+        image: k8sacr4321new.azurecr.io/k8sacr4321new:${IMAGE_TAG}
+        
         imagePullPolicy: Always
         ports:
         - containerPort: 8080
