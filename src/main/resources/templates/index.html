@@ -4,6 +4,79 @@
     <meta charset="utf-8">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"/>
     <link data-th-href="@{/css/main.css?{id}(id=${timestamp})}" rel="stylesheet">
+  <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: #f4f7fb;
+            color: #1f2937;
+            text-align: center;
+        }
+
+        header {
+            background: #24292f;
+            color: white;
+            padding: 25px;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 36px;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 60px auto;
+            padding: 40px;
+            background: white;
+            border-radius: 12px;
+            box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+        }
+
+        h2 {
+            font-size: 30px;
+            margin-bottom: 20px;
+        }
+
+        p {
+            font-size: 20px;
+            line-height: 1.6;
+        }
+
+        .tools {
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+            flex-wrap: wrap;
+            margin-top: 30px;
+        }
+
+        .tool {
+            padding: 15px 25px;
+            background: #e8f0fe;
+            border-radius: 8px;
+            font-weight: bold;
+        }
+
+        .success {
+            margin-top: 35px;
+            padding: 20px;
+            background: #e7f6ec;
+            border-radius: 8px;
+            color: #166534;
+            font-size: 20px;
+        }
+
+        footer {
+            margin-top: 50px;
+            padding: 20px;
+            background: #24292f;
+            color: white;
+        }
+    </style>
+
+
+    
     <title>Hello Docker + Spring Boot + Helm + Kubernetes!!!!</title>
 </head>
 <body>
@@ -14,7 +87,36 @@
 
 <main role="main" class="container">
     <div class="starter-template">
-        
+         <h2>Welcome to My Spring Boot Application 🚀</h2>
+
+    <p>
+        This application is deployed using a modern DevOps pipeline
+        with Jenkins, Docker, Helm and Kubernetes.
+    </p>
+
+    <div class="tools">
+        <div class="tool">☕ Spring Boot</div>
+        <div class="tool">🐳 Docker</div>
+        <div class="tool">⚙️ Jenkins</div>
+        <div class="tool">⎈ Helm</div>
+        <div class="tool">☸️ Kubernetes</div>
+    </div>
+
+    <div class="success">
+        ✅ Application deployed successfully!
+    </div>
+
+    <p>
+        <strong>Deployment Pipeline:</strong>
+    </p>
+
+    <p>
+        GitHub → Jenkins → Maven → Docker → Helm → Kubernetes
+    </p>
+
+</div>
+
+    
     </div>
 </main>
 
